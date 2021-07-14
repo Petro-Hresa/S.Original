@@ -1,0 +1,188 @@
+.header {
+
+
+  &__inner {
+    @extend .flex;
+    justify-content: space-between;
+    background-color: #ffff;
+    padding: 12px 15px;
+    z-index: 10000;
+    font-size: 13px;
+    color:$colorText-4;
+  }
+
+
+  &__boxLeft{
+    @extend .flex;
+  }
+
+
+  /* .header__manu */
+  &__menu {
+    @extend .flex;
+
+  }
+
+
+  /* .header__burgerBorder */
+  &__burgerBorder {
+    @extend .cursorItems;
+    z-index: 101;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #0000;
+    padding: 5px 2px;
+  }
+
+
+
+  /* .header__burger */
+  &__burger {
+    z-index: 3;
+    padding: 8px 0px;
+    display: block;
+    @media screen and (max-width: $lg) {
+
+    }
+  }
+
+
+  /* header__borger_active */
+  &__borger_active {
+    @media screen and (max-width: $lg) {
+      .header__line-burger {
+        transform: rotate(-45deg);
+      }
+
+      &:before {
+        opacity: 0;
+        top: 0;
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        bottom: 0;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+
+  /* .header__burgerLine */
+  &__burgerLine {
+    background-color: black;
+    display: none;
+    width: 25px;
+    height: 2px;
+    margin: 7px 5px ;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    order: 3;
+
+    &:before,
+    &:after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      border-radius: 20px;
+      background-color: #000;
+    }
+
+    &:before {
+      top: -8px;
+    }
+
+    &:after {
+      bottom: -8px;
+    }
+
+
+  }
+
+  &__sorch{
+    display: none;
+    margin-left: 70px;
+    @media screen and (min-width:$lg) {
+      display: flex;
+      align-items: center;
+    }
+
+  }
+
+  &__icon{
+    @extend .backgroundItems;
+    @extend .cursorItems;
+    min-width: 24px;
+    max-width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    display: block;
+  }
+
+
+  &__logo{
+    @extend .backgroundItems;
+    min-width: 95px;
+    max-width: 95px;
+    height: 16px;
+  }
+
+  
+  &__boxRight{
+    @extend .header__boxLeft
+  }
+
+  &__phone{
+    display: none;
+    @media screen and (min-width:$lg){
+      margin-right: 20px;
+      display: block;
+      font-size: 16px;
+      color: $colorText-1;
+      font-weight: bold;
+    }
+
+  }
+
+
+  &__registration{
+    display: flex;
+  }
+
+  &__user{
+    @extend .backgroundItems;
+    @extend .cursorItems;
+    width: 20px;
+    height: 20px;
+    margin-left: 25px;
+  }
+
+
+  &__basket{
+    @extend .header__user;
+    @extend .cursorItems;
+    position: relative;
+    margin-right: 10px;
+  }
+
+  &__basketCounter{
+    width: 20px;
+    height: 20px;
+    background-color: $bacground-1;
+    position: absolute;
+    border-radius: 50%;
+    top: -50%;
+    right: -50%;
+    color:$colorText-3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+  }
+
+} 
+
+

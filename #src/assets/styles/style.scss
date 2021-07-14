@@ -1,0 +1,69 @@
+
+/*Base*/
+@import "base/base";
+@import "base/mixsins";
+@import "base/variables";
+@import "fonts/fonts";
+/*Bootstrap */
+@import 'vendors/_bootstrap-customized';
+
+
+/*Pages*/
+@import "../../partials/header/header";
+
+
+@import "../../pages/home/home";
+
+
+@import "../../partials/footer/_footer";
+
+
+  /*owl-carousel*/
+  @import 'vendors/owl.carousel.min';
+  @import 'vendors/owl.theme.default.min';
+
+
+
+
+#body{
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	min-width: 320px;
+	max-width: 1920px;
+	min-height: 100vh;
+	font-family: $fontFamily-1;
+	margin: 0 auto;
+}
+
+
+#main{
+	flex:1 1 auto;
+	// border: 1px solid red;
+}
+
+
+
+.container{
+	max-width: 1140px !important;
+// border: 1px solid #000;
+}
+
+.cursorItems{
+	cursor: pointer;
+}
+
+.backgroundItems{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.flex{
+	display: flex;
+	align-items: center;
+}
+
+

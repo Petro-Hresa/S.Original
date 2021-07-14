@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24" width="20" height="24">
+	<title>хедер</title>
+	<defs>
+		<image  width="20" height="24" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYBAMAAAAIZcBFAAAAAXNSR0IB2cksfwAAADBQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWj8cCwAAABB0Uk5TABCA3//Pj59AMCCv72Bwv5fN2f4AAACwSURBVHicY2BgYBAycVZggIAQs2RXCIvJnYGhBCLMbADBQMACFGFzADNbgEwmTwTTA8xcAmI6QtRuYGDghqjlPsjAILIBzOTwZmDY0gCxo8Qs2R1q8TQT50wIa7UTA4PKLiCD8bbLRgYGaZe9AgyLXXaApLpdrBhKHkKUybkznIbqZdjD4ARjqiAz/RdAWFxfGEq8L4JYslvcGTi2uNgnqX128Qa6gvH6FxcX/1oBBgCGcSRY0j58vAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="хедер">
+		<g id="юзер">
+			<use id="Layer 2" href="#img1" x="0" y="0" />
+		</g>
+	</g>
+</svg>

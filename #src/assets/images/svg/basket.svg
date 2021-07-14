@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 24" width="19" height="24">
+	<title>хедер</title>
+	<defs>
+		<image  width="19" height="24" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAYBAMAAADquds8AAAAAXNSR0IB2cksfwAAADBQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWj8cCwAAABB0Uk5TACCf/zDvr4C/QI/PcBBQ35IFI2UAAACuSURBVHicY2BgYBAyNhJgAAOW4PTkEAiTw5KB0wLCFF7AwLAYpIKlXFm9HIhLgNLGEABUwrHz8MmZMw+f3MHAwJwweQIDw+QJyUBmgQRQi4RAMQPD5QKIOcUXGCYfgDAPT2AAqQQBIP0YxnzAUAx1iXABQzGEBTSJQRnGVGDohzL5Gxg6oEyOBoYIGDOAwQrK5DJgMIcy2Q0YLGAKDBgWby8Hg80LGNiDIb4IZwAAaJgqFAYoVNUAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="хедер">
+		<g id="кошик">
+			<use id="Layer 3" href="#img1" x="0" y="0" />
+		</g>
+	</g>
+</svg>

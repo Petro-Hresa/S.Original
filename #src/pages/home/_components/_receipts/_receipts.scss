@@ -1,0 +1,175 @@
+.receipts {
+    padding: 0;
+    max-height: 1100px;
+
+    @media screen and(min-width:$sm) {
+        padding:  0 15px;
+    }
+
+
+	/* .receipts__carousel */
+	&__carousel .owl-item{
+        width: 100%;
+
+        div{
+            display: flex;
+            @media screen and(min-width:$md) {
+                justify-content: flex-end;
+
+            }
+        }
+
+	}
+
+
+    &__carousel .owl-nav{
+        position: absolute;
+        width: 100%;
+        bottom: -90px;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and(min-width:$md) {
+             bottom: 0px;
+        }
+
+        @media screen and(min-width:$xxl) {
+            width: calc(100% + 130px) !important;
+        }
+    }
+
+
+    &__wrapArrow{
+        display: flex;
+        text-align: left;
+    }
+
+
+    &__wrapArrow_right{
+        text-align: right;
+    }
+    
+
+    &__arrowRight,
+    &__arrowLeft{
+        width: 15px;
+        height: 15px;
+        margin: 0 12px;
+    }
+
+
+    &__carousel .owl-prev.disabled,
+    &__carousel .owl-next.disabled{
+        @media screen and(min-width:$md) {
+            color: rgba(0, 0, 0, 0) !important;
+        }
+    }
+
+
+    &__carousel .owl-prev:hover,
+    &__carousel .owl-next:hover{
+       background-color:rgba(0, 0, 0, 0.23) !important;
+    }
+
+
+	/* .receipts__blockContent */
+	&__blockContent {
+        position: absolute;
+        top:180px;
+        left: 0;
+        min-width: 300px;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+    
+        @media screen and(min-width:$md) {
+            min-width: 539px;
+            max-width: 539px;
+            padding: 0;
+        }
+
+	}
+
+
+    &__title{
+        font-size: 40px;
+        line-height: 44px;
+        font-family: $fontFamily-3;
+        color:$colorText-1;
+        margin-bottom: 40px;
+
+        @media screen and(min-width:$sm) {
+            font-size: 60px;
+            letter-spacing: 2px;
+        }
+
+        @media screen and(min-width:$lg) {
+            font-size: 70px;
+            line-height: 70px;
+            letter-spacing: 4px;
+        }
+        
+    }
+
+
+    &__button{
+        font-size: 18px;
+        width: 176px;
+        height: 58px;
+        text-align: center;
+        padding: 1rem;
+        background-color: transparent;
+        border: 2px solid $bacground-1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::after{
+            content:'';
+            background-image: url('../images/svg/arrow-right.svg');
+            @extend .backgroundItems;
+            min-width: 15px;
+            display: inline-block;
+            height: 15px;
+            margin-left: 18px;
+        }
+
+      
+        @media screen and(min-width:$md) {
+            width: 223px;
+        }
+    }
+
+
+	/* .receipts__wrapImg */
+	&__blockImg {
+        width: 46.625rem;
+        height: 570px;
+        overflow: hidden;
+       
+        background-image: url('../../../../assets/images/img-min-1.png');
+        background-size: cover;
+        background-position: 0 -50px; 
+        background-repeat:no-repeat;
+        @media screen and(min-width: 400px){
+            background-position: 0 10%; 
+        }
+
+
+        @media screen and(min-width:$sm) {
+            max-width: 46.625rem;
+            height: 570px;
+            background-image: url('../../../../assets/images/img-1.png');
+            background-position: 175px 15%; 
+
+        }
+
+        @media screen and(min-width:$lg) {
+            background-position: 0px 15%; 
+
+        }
+	}
+
+}

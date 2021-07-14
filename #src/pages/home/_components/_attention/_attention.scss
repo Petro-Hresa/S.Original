@@ -1,0 +1,262 @@
+
+.attention > * {
+	break-inside: avoid;
+}
+
+.attention {
+    margin-top: 148px;
+	display: block;
+    position: relative;
+	column-count: 1;
+
+	@media screen and(min-width:$sm) {
+		column-count: 2;
+		column-gap:15px;
+	}
+
+	@media screen and(min-width:$lg) {
+		column-gap:30px;
+	}
+
+    @media screen and(min-width:$lg) {
+       margin-top: 175px;
+    }
+
+
+	/* .attention__wrapTitle */
+	&__wrapTitle {
+        color:$colorText-1;
+        font-family: $fontFamily-3;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100%;
+		padding-bottom: 35px;
+		font-size: 30px;
+		padding: 0 15px;
+		text-align: center;
+
+		@media screen and(max-width:350px) {
+			text-align: left;
+        }
+
+		@media screen and(min-width:$sm) {
+            font-size: 35px;
+			line-height: 55px;
+            letter-spacing: -1px;
+			text-align: left;
+			white-space: nowrap;
+			width: 50%;
+        }
+		
+        @media screen and(min-width:$md) {
+            font-size: 50px;
+            line-height: 55px;
+			padding-bottom: 60px;
+        }
+
+		@media screen and(min-width:$lg) {
+            font-size: 65px;
+        }
+
+	}
+
+
+	/* .attention__title */
+	&__title {
+		color: #d4d4d4;
+	}
+
+}
+
+
+
+.card {
+	margin-bottom: 60px;
+
+	/* .card__img */
+	&__img {
+		overflow: hidden;
+		img{
+			max-width: 100%;
+			max-height: 100%;
+			object-fit: cover;
+		}
+	}
+
+
+	/* .card__content */
+	&__content {
+		margin-top: 32px;
+
+		@media screen and(min-width:$sm) {
+			display: flex;
+        }
+	}
+
+
+	/* .card__action */
+	&__action {
+		font-size: 13px;
+		line-height: 20px;
+		color: $colorText-2;
+		width: 45px;
+		height: 20px;
+		background-color: #e6e6e6;
+		text-align: center;
+		margin: 0 15px 25px 0;
+
+	}
+
+
+	/* .card__title */
+	&__title {
+		font-size: 20px;
+		line-height: 20px;
+		color:$colorText-1;
+		font-family: $fontFamily-2;
+		margin-bottom: 15px;
+
+	}
+
+
+	/* .card__subscrible */
+	&__subscrible {
+		font-size: 13px;
+		line-height: 20px;
+		color: $colorText-2;
+		margin-bottom: 15px;
+	}
+
+
+	/* .card__price */
+	&__price {
+		@extend .card__title;
+		font-size: 16px;
+	}
+
+
+	/* .card__1 */
+	&__1{
+        display: flex;
+		padding-top: 75px;
+		@media screen and(max-width:445px) {
+			display: block;
+		}
+
+		@media screen and(min-width:$sm) {
+			padding-top: 0;
+			display: block;
+		}
+	
+		@media screen and(min-width:$lg) {
+			display: flex;
+			justify-content:space-between;
+			margin-bottom: 200px !important;
+        }
+	
+		
+	}
+
+	&__1 &__img{
+		max-width: 15.938rem;
+		width: 255px;
+		// max-height: 28.125rem;
+	}
+
+	&__1 &__content{
+	
+	
+		@media screen and(min-width:445px) {
+			width: 203px;
+			padding: 75px 0 2rem;
+			margin: 32px auto 0 6%;
+			display: block;
+		
+		}
+
+		@media screen and(min-width:$sm) {
+			padding: 0 ;
+			margin-left: 0;
+		}
+	
+	
+		@media screen and(min-width:$lg) {
+			width: 203px;
+			padding: 75px 0 2rem;
+			margin: 0 auto 0 6%;
+        }
+	}  
+
+
+
+	/* .card__2 */
+	&__2{
+
+		padding-top: 0;
+		@media screen and(min-width:$sm) {
+			padding-top: 70px;
+	
+		}
+	
+
+		display: block;
+		@media screen and(min-width:$md) {
+			padding-top: 115px;
+
+        }
+    }
+
+	&__2 &__img{
+		max-width: 33.75rem;
+		max-height: 45.813rem;
+	}
+
+
+	/* .card__3 */
+	&__3{
+		@media screen and(max-width:$sm){
+			padding-right: 10px;
+		}
+	}
+
+	&__3 &__img{
+		max-width:27.813rem;
+		max-height: 44.563rem;
+	}
+
+
+	/* .card__4 */
+	&__4{
+       padding-top: 50px;
+	   @media screen and(max-width:$sm){
+		   padding-left: 10px;
+	   }
+		@media screen and(min-width:$sm) {
+			padding-top: 0px;
+
+        }
+	}
+
+	&__4 &__img{
+		max-width:27.813rem;
+		max-height: 37.938rem;
+
+	}
+
+
+	&__3,
+	&__4{
+		margin-bottom: 0;
+	}
+
+}
+
+.cardsBox{
+
+	@media screen and(max-width:$sm) {
+		display: flex;
+		align-items: start;
+		margin-bottom: 50px;
+	}
+}
