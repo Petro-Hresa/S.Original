@@ -100,11 +100,12 @@
 		font-size: 13px;
 		line-height: 20px;
 		color: $colorText-2;
-		width: 45px;
 		height: 20px;
+		padding: 0 .5em;
 		background-color: #e6e6e6;
 		text-align: center;
 		margin: 0 15px 25px 0;
+		display: inline-block;
 
 	}
 
@@ -157,6 +158,7 @@
 	
 		
 	}
+
 
 	&__1 &__img{
 		max-width: 15.938rem;
