@@ -6,8 +6,8 @@
 
 const querySell = x => document.querySelector(x);
 
-const leftArrow = '<div class="receipts__wrapArrow receipts__wrapArrow_left"> <img src = "../../../../assets/images/svg/arrow-left.svg" alt="left" class="receipts__arrowLeft">Чоловічий <br> одяг</div>';
-const rightArrow = '<div class="receipts__wrapArrow receipts__wrapArrow_right">Жіночий <br> одяг <img src = "../../../../assets/images/svg/arrow-right.svg" alt="right" class="receipts__arrowRight"></div>';
+const leftArrow = '<div class="receipts__wrapArrow receipts__wrapArrow_left"> <img src = "./assets/images/svg/arrow-left.svg" alt="left" class="receipts__arrowLeft">Чоловічий <br> одяг</div>';
+const rightArrow = '<div class="receipts__wrapArrow receipts__wrapArrow_right">Жіночий <br> одяг <img src = "./assets/images/svg/arrow-right.svg" alt="right" class="receipts__arrowRight"></div>';
 
 $(document).ready(function(){
     $('.receipts__carousel.owl-carousel').owlCarousel({

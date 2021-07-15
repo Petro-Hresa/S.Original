@@ -501,7 +501,7 @@ template {
     width: 46.625rem;
     height: 570px;
     overflow: hidden;
-    background-image: url("../../../../assets/images/img-min-1.png");
+    background-image: url("../images/img-min-1.webp");
     background-size: cover;
     background-position: 0 -50px;
     background-repeat: no-repeat;
@@ -1038,7 +1038,7 @@ footer#footer {
     .receipts__blockImg {
         max-width: 46.625rem;
         height: 570px;
-        background-image: url("../../../../assets/images/img-1.png");
+        background-image: url("../images/img-1.webp");
         background-position: 175px 15%;
     }
 
