@@ -1,0 +1,119 @@
+.publication {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+
+    @media screen and(min-width: $sm) {
+        grid-template-columns: repeat(2, 1fr);
+       
+    }
+
+
+	/* .publication__columnLeft */
+	&__columnLeft {
+	}
+
+
+	/* .publication__wrapTitle */
+	&__wrapTitle {
+        margin-bottom: 0;
+        @media screen and(min-width: $md) {
+            margin-bottom: 50px;
+        }
+
+        @media screen and(min-width: $lg) {
+            display: flex;
+            align-items: center;
+        }
+	}
+
+
+	/* .publication__title */
+	&__title {
+        font-size: 30px;
+        color:$colorText-1;
+        font-family: $fontFamily-2;
+	}
+
+
+	/* .publication__watch */
+	&__watch {
+        @extend .receipts__button;
+        border: none;
+        color:$colorText-4;
+        font-size: 13px;
+        width: 150px !important;
+        padding-left: 0;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        @media screen and(min-width: $lg) {
+            justify-content: center;
+            margin-left: 20px;
+           
+        }
+    
+        &::after{
+            content:'';
+            background-image: url('../images/svg/arrow-right-w.svg');
+            min-width: 9px;
+            height: 10px;
+        }
+
+	}
+
+
+	/* .publication__card */
+	&__card {
+	}
+
+
+	/* .publication__text */
+	&__text {
+        padding-right: 0rem;
+
+        @media screen and(min-width: $lg) {
+            padding-right: 4rem;
+        }
+       
+	}
+
+
+	/* .publication__paragraph */
+	&__paragraph {
+        margin: 30px 0;
+	}
+
+
+	/* .publication__img */
+	&__imgCard {
+        @extend .backgroundItems;
+        background-size:cover !important;
+        background-color: black;
+        padding-bottom: 75%;
+          
+        &:first-child{
+            max-width: 33.75rem;
+        }
+
+
+        &:last-child{
+            max-width: 100%;
+            background-position-Y: 20% !important;
+
+            @media screen and(min-width: $sm) {
+                max-width: 27.813rem;
+            }
+        }
+
+	}
+
+
+	/* .publication__columnRight */
+	&__columnRight {
+	}
+
+}

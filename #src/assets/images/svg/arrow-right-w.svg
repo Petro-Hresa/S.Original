@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 10" width="9" height="10">
+	<title>блог</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #717171 } 
+	</style>
+	<g id="блог">
+		<path id="Shape 1 copy 3" class="shp0" d="M4.01 0L8 4L8 4L9 5L4.01 10L3.02 9L6.3 5.71L0 5.71L0 4.3L6.3 4.3L3.02 1L4.01 0Z" />
+	</g>
+</svg>
