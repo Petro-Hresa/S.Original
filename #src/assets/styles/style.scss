@@ -4,17 +4,12 @@
 @import "base/mixsins";
 @import "base/variables";
 @import "fonts/fonts";
-/*Bootstrap */
 @import 'vendors/_bootstrap-customized';
 
 
 /*Pages*/
 @import "../../partials/header/header";
-
-
 @import "../../pages/home/home";
-
-
 @import "../../partials/footer/_footer";
 
 
@@ -40,19 +35,19 @@
 
 #main{
 	flex:1 1 auto;
-	// border: 1px solid red;
 }
-
 
 
 .container{
 	max-width: 1140px !important;
-// border: 1px solid #000;
+
 }
+
 
 .cursorItems{
 	cursor: pointer;
 }
+
 
 .backgroundItems{
     background-position: center;
@@ -64,6 +59,19 @@
 .flex{
 	display: flex;
 	align-items: center;
+}
+
+
+.sectionMarginTop{
+	margin-top: 50px;
+	@media screen and (min-width: $sm){
+		margin-top: 80px;
+	}
+
+	@media screen and (min-width: $lg){
+		margin-top: 150px;
+	}
+
 }
 
 

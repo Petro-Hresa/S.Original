@@ -1,5 +1,5 @@
 .publication {
-    margin-top: 150px;
+    @extend.sectionMarginTop;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
@@ -101,6 +101,7 @@
 
 
         &:last-child{
+            height: 200px;;
             max-width: 100%;
             background-position-Y: 20% !important;
 

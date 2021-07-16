@@ -8,6 +8,7 @@
 	display: block;
     position: relative;
 	column-count: 1;
+	padding-bottom: 50px;
 
 	@media screen and(min-width:$sm) {
 		column-count: 2;

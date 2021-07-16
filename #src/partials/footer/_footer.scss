@@ -1,8 +1,216 @@
-footer#footer{
+.footer {
+	/* .footer__inner */
 
- min-height: 100px;
- background-color: #fff;
- border: 1px solid #000;
+	&__inner {
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        grid-gap:15px;
+        padding: 23px 0;
+        @media screen and(min-width: $sm) {
+            grid-template-columns: repeat(2 , 1fr);
+        }
 
+        @media screen and(min-width: $md) {
+            grid-template-columns: repeat(4 , 1fr);
+            padding: 53px 0;
+        }
+
+	}
+
+
+    &__wrapBox{
+        display: flex;
+    }
+
+
+    &__rights{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    details[open] summary ~ *{
+        animation: sweep .2s ease-out;
+    }
+
+
+    @keyframes sweep{
+        from{
+            // opacity: 0;
+            margin-top: -10px;
+        }
+        to{
+            // opacity: 1;
+            margin-top: 0px;
+        }
+    }
 
 }
+
+
+.customer {
+    display: block;
+
+	/* .customer__list */
+	&__list {
+        list-style: none;
+        text-align: left;
+        min-width: 200px;
+
+        a{
+            font-size: 14px;
+            line-height: 30px;
+            color: #717171;
+            @extend.cursorItems;
+        }
+	}
+
+	/* .customer__title */
+	&__title {
+        font-size: 14px;
+        line-height: 20px;
+        color:$colorText-1;
+        font-family: $fontFamily-2;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        padding-right: 20px;
+        display: inline-block;
+        position: relative;
+
+      
+        @media screen and(max-width: $md) {
+
+            &:after{
+                content:'';
+                width: 8px;
+                height: 8px;
+                display: block;
+                border: 1px solid $bacground-3;
+                position: absolute;
+                right: 5px;
+                top: 14%;
+                transform: translate( -50% ,0%);
+                transform: rotate(45deg);
+                border-top:none;
+                border-left:none;
+            }
+
+        }
+      
+    }
+
+    details[open] summary > &__title:after{
+        top: 35%;
+        border-top: 1px solid $bacground-3;
+        border-left:1px solid $bacground-3;
+        border-right:none;
+        border-bottom:none;
+    }
+
+}
+
+
+
+.company {
+
+	/* .company__list */
+	&__list {
+        @extend.customer__list ;
+	}
+
+	/* .company__title */
+	&__title {
+        @extend.customer__title;
+	}
+
+	/* .company__link */
+	&__link {
+	}
+}
+
+
+.order {
+
+	/* .order__list */
+	&__list {
+        @extend.customer__list ;
+	}
+
+	/* .order__title */
+	&__title {
+        @extend.customer__title;
+	}
+
+	/* .order__link */
+	&__link {
+	}
+}
+
+
+.networks {
+
+	/* .networks__list */
+	&__list {
+        @extend.customer__list ;
+	}
+
+
+	/* .networks__title */
+	&__title {
+        @extend.customer__title;
+         
+        &:after{
+            content:'';
+            display: none !important;
+        }
+	}
+
+    
+	/* .networks__link */
+	&__link {
+	}
+}
+
+
+.rights{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: $colorText-4;
+    padding: 15px 0;
+
+    @media screen and(max-width: $sm){
+        align-items: flex-end;
+    }
+
+    @media screen and(min-width: $md){
+        padding: 35px 0;
+    }
+
+    &__wrapData{ 
+    
+        @media screen and(min-width: $sm){
+            display: flex; 
+            align-items:flex-end;
+        }
+    }
+
+
+    &__logo{
+        margin-right: 10px;
+        min-width: 111px;
+        min-height: auto;
+        @media screen and(max-width: $sm){
+           margin-bottom: 10px;
+        }
+    }
+
+
+    &__confidentiality{
+
+        @media screen and(max-width: 400px){
+            margin: 10px 0;
+        }
+    }
+}
+

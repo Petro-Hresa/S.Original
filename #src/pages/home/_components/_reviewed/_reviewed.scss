@@ -1,0 +1,43 @@
+.reviewed {
+    @extend .sectionMarginTop;
+    padding: 50px 0;
+    background-color: $bacground-2;
+    @media screen and(min-width: $md) {
+        padding: 113px 0;
+    }
+
+    &__title{
+        @extend .publication__title;
+    }
+
+	/* .reviewed__carousel */
+	&__carousel {
+        margin-top: 62px;
+	}
+	/* .reviewed__card */
+	&__card {
+	}
+}
+
+
+
+.card {
+	/* .card__3 */
+	&__3 {
+	}
+	/* .card__img */
+	&__img {
+	}
+	/* .card__content */
+	&__content {
+	}
+	/* .card__title */
+	&__title {
+	}
+	/* .card__subscrible */
+	&__subscrible {
+	}
+	/* .card__price */
+	&__price {
+	}
+}
