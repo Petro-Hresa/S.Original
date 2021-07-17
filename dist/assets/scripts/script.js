@@ -115,7 +115,7 @@ $(document).ready(function(){
 
 });
 
-// document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('resize' , debounce(resizePage,  11));
 
@@ -160,6 +160,6 @@ $(document).ready(function(){
 
   // }
 
-// })
+})
 
 

@@ -33,7 +33,8 @@
      max-height: 26.25rem;
 
      @extend .backgroundItems;
-     background-size:cover !important;
+     @extend .cursorItems;
+
      background-color: black;
      font-family:$fontFamily-2;
      color:$colorText-3;
@@ -41,7 +42,10 @@
      padding: 30px;
      padding-bottom: 95%;
      background-position: 50% 30% !important;
+     background-size:cover !important;
      position: relative;
+     transition: all 0.2s ease-in-out;
+
 
      div{
         position: absolute;
@@ -54,6 +58,15 @@
         padding-bottom: 75%;
      }
 
+     @media screen and(min-width: $lg) {
+        &:hover {
+            transform: scale(1.01);
+        }
+     }
+
 	}
+
+    
+ 
 
 }

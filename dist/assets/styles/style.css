@@ -671,7 +671,6 @@ template {
 .whom__item {
     max-width: 21.875rem;
     max-height: 26.25rem;
-    background-size: cover !important;
     background-color: black;
     font-family: "gilroy-bold";
     color: #ffffff;
@@ -679,7 +678,9 @@ template {
     padding: 30px;
     padding-bottom: 95%;
     background-position: 50% 30% !important;
+    background-size: cover !important;
     position: relative;
+    transition: all 0.2s ease-in-out;
 }
 
 .whom__item div {
@@ -1242,18 +1243,6 @@ details[open] summary > .networks__title:after {
     max-width: 1140px !important;
 }
 
-.cursorItems,
-.header__burgerBorder,
-.header__icon,
-.header__user,
-.header__basket,
-.customer__list a,
-.company__list a,
-.order__list a,
-.networks__list a {
-    cursor: pointer;
-}
-
 .backgroundItems,
 .header__icon,
 .header__logo,
@@ -1532,6 +1521,11 @@ details[open] summary > .networks__title:after {
         grid-gap: 30px;
     }
 
+    .whom__item:hover {
+        -webkit-transform: scale(1.01);
+        transform: scale(1.01);
+    }
+
     .publication__wrapTitle {
         display: -ms-flexbox;
         display: flex;
@@ -1547,6 +1541,19 @@ details[open] summary > .networks__title:after {
 
     .publication__text {
         padding-right: 4rem;
+    }
+
+    .cursorItems,
+  .header__burgerBorder,
+  .header__icon,
+  .header__user,
+  .header__basket,
+  .whom__item,
+  .customer__list a,
+  .company__list a,
+  .order__list a,
+  .networks__list a {
+        cursor: pointer;
     }
 
     .sectionMarginTop,

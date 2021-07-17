@@ -45,7 +45,10 @@
 
 
 .cursorItems{
-	cursor: pointer;
+	@media screen and (min-width: $lg) {
+		cursor: pointer;
+	}
+
 }
 
 
